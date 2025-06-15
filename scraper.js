@@ -98,7 +98,7 @@ async function scrapeWikipediaFacts() {
     headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
     // executablePath: puppeteer.executablePath()
-    // executablePath: '/usr/bin/google-chrome'  // Usually default path on Linux Render
+    executablePath: '/usr/bin/google-chrome'  // Usually default path on Linux Render
   });
 
   const page = await browser.newPage();
