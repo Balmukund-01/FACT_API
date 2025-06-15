@@ -97,7 +97,7 @@ async function scrapeWikipediaFacts() {
   const browser = await puppeteer.launch({
     headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
-    executablePath: puppeteer.executablePath()
+    // executablePath: puppeteer.executablePath()
     // executablePath: '/usr/bin/google-chrome'  // Usually default path on Linux Render
   });
 
