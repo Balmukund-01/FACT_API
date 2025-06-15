@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "postinstall": "puppeteer install"
-
+    "postinstall": "npx puppeteer browsers install chrome"
   },
   "keywords": [
     "facts",
@@ -23,6 +22,6 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "node-cron": "^4.1.0",
-    "puppeteer": "^24.10.1"
+    "puppeteer": "^21.11.0"
   }
 }
