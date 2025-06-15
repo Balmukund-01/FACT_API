@@ -1,12 +1,14 @@
 // server.js
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 const fs = require("fs");
 const axios = require("axios");
 const cron = require("node-cron");
 const scrapeFacts = require("./scraper");
 
 const app = express();
+app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 // 🧠 Load facts from local cache
