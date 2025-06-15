@@ -4,7 +4,9 @@
   "description": "API that scrapes and serves interesting facts",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "puppeteer install"
+
   },
   "keywords": [
     "facts",
